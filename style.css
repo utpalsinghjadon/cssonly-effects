@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212529;
+    font-family: 'Bangers';
+}
+
+.container {
+    padding: 1rem;
+}
+
+.effects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+
+
+}
+
+.effect-container {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    background-color: #495057;
+    /* background-color: black; */
+    text-align: center;
+}
+
+.effect {
+    position: relative;
+    display: inline-block;
+    background-color: #c92a2a;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+
+.effect-container h2 {
+    border: 0.1rem solid;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: black;
+    background-color: #51cf66;
+    letter-spacing: 2px;
+}
+
+.effect0::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: border-bottom 0.2s;
+
+}
+
+.effect0:hover::after {
+    border-bottom: 3px solid yellow;
+}
+
+.effect1::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+.effect1:hover::after {
+    width: 100%;
+}
+
+.effect2::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+
+}
+
+.effect2:hover::after {
+    width: 100%;
+}
+
+.effect3::before {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+.effect3:hover::before {
+    width: 50%;
+}
+
+.effect3::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+}
+
+.effect3:hover::after {
+    width: 50%;
+}
+
+.effect4::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+    transform: scaleX(0);
+}
+
+.effect4:hover::after {
+    transform: scaleX(1);
+}
+
+.effect5::before {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    left: 0;
+    /* right: 0; */
+    top: 0;
+    transition: width 0.5s;
+
+}
+
+.effect5:hover::before {
+    width: 100%;
+}
+
+
+.effect5::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    left: 0;
+    /* right: 0; */
+    bottom: 0;
+    transition: width 0.5s;
+}
+
+.effect5:hover::after {
+    width: 100%;
+}
+
+.effect6::before {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width 0.5s;
+
+}
+
+.effect6:hover::before {
+    width: 100%;
+}
+
+
+.effect6::after {
+    content: '';
+    border-bottom: 3px solid yellow;
+    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: width 0.5s;
+}
+
+.effect6:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* ********************************************************************* */
+
+
+footer {
+    bottom: 0;
+    position: absolute;
+    color: #51cf66;
+    right: 0;
+}
